@@ -44,19 +44,21 @@ public class JavaServer {
     try {
       handler = new CalculatorHandler();
       processor = new Calculator.Processor(handler);
+      
+      simple(processor);
 
-      Runnable simple = new Runnable() {
-        public void run() {
-          simple(processor);
-        }
-      };      
+//      Runnable simple = new Runnable() {
+//        public void run() {
+//          simple(processor);
+//        }
+//      };      
 //      Runnable secure = new Runnable() {
 //        public void run() {
 //          secure(processor);
 //        }
 //      };
 
-      new Thread(simple).start();
+//      new Thread(simple).start();
 //      new Thread(secure).start();
     } catch (Exception x) {
       x.printStackTrace();
