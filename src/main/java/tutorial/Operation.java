@@ -7,9 +7,6 @@
 package tutorial;
 
 
-import java.util.Map;
-import java.util.HashMap;
-import org.apache.thrift.TEnum;
 
 /**
  * You can define enums, which are just 32 bit integers. Values are optional

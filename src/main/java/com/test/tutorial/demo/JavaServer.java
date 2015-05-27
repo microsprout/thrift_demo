@@ -1,4 +1,4 @@
-package com.test.thriftdemo;
+package com.test.tutorial.demo;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -22,17 +22,13 @@ package com.test.thriftdemo;
 import org.apache.thrift.server.TServer;
 import org.apache.thrift.server.TServer.Args;
 import org.apache.thrift.server.TSimpleServer;
-import org.apache.thrift.server.TThreadPoolServer;
 import org.apache.thrift.transport.TSSLTransportFactory;
+import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
 import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TServerTransport;
-import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
 
 // Generated code
-import tutorial.*;
-import shared.*;
-
-import java.util.HashMap;
+import tutorial.Calculator;
 
 public class JavaServer {
 

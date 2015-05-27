@@ -1,4 +1,4 @@
-package com.test.thriftdemo;
+package com.test.tutorial.demo;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,15 +19,14 @@ package com.test.thriftdemo;
  * under the License.
  */
 
-import org.apache.thrift.TException;
-
-// Generated code
-import tutorial.*;
-import shared.*;
-
 import java.util.HashMap;
 
-public class CalculatorHandler implements Calculator.Iface {
+import shared.SharedStruct;
+import tutorial.InvalidOperation;
+import tutorial.Work;
+// Generated code
+
+public class CalculatorHandler implements tutorial.Calculator.Iface {
 
   private HashMap<Integer,SharedStruct> log;
 
